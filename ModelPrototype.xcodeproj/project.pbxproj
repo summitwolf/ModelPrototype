@@ -14,6 +14,12 @@
 		911CFECA2B7C1902008A25A4 /* ModelPrototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911CFEC92B7C1902008A25A4 /* ModelPrototypeTests.swift */; };
 		911CFED42B7C1902008A25A4 /* ModelPrototypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911CFED32B7C1902008A25A4 /* ModelPrototypeUITests.swift */; };
 		911CFED62B7C1902008A25A4 /* ModelPrototypeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911CFED52B7C1902008A25A4 /* ModelPrototypeUITestsLaunchTests.swift */; };
+		911CFEE42B7C1F67008A25A4 /* MixedRadixNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911CFEE32B7C1F67008A25A4 /* MixedRadixNumber.swift */; };
+		911CFEE62B7C2B54008A25A4 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911CFEE52B7C2B54008A25A4 /* Attribute.swift */; };
+		911CFEE82B7C2FD3008A25A4 /* AttributeGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911CFEE72B7C2FD3008A25A4 /* AttributeGroup.swift */; };
+		911CFEEA2B7C303C008A25A4 /* AttributeGroupCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911CFEE92B7C303C008A25A4 /* AttributeGroupCollection.swift */; };
+		911CFEEC2B7C3557008A25A4 /* CardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911CFEEB2B7C3557008A25A4 /* CardDeck.swift */; };
+		911CFEEE2B7C3668008A25A4 /* AttributeGroupCollectionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911CFEED2B7C3668008A25A4 /* AttributeGroupCollectionFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		911CFECF2B7C1902008A25A4 /* ModelPrototypeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModelPrototypeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		911CFED32B7C1902008A25A4 /* ModelPrototypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPrototypeUITests.swift; sourceTree = "<group>"; };
 		911CFED52B7C1902008A25A4 /* ModelPrototypeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPrototypeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		911CFEE32B7C1F67008A25A4 /* MixedRadixNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixedRadixNumber.swift; sourceTree = "<group>"; };
+		911CFEE52B7C2B54008A25A4 /* Attribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attribute.swift; sourceTree = "<group>"; };
+		911CFEE72B7C2FD3008A25A4 /* AttributeGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeGroup.swift; sourceTree = "<group>"; };
+		911CFEE92B7C303C008A25A4 /* AttributeGroupCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeGroupCollection.swift; sourceTree = "<group>"; };
+		911CFEEB2B7C3557008A25A4 /* CardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDeck.swift; sourceTree = "<group>"; };
+		911CFEED2B7C3668008A25A4 /* AttributeGroupCollectionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeGroupCollectionFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +106,7 @@
 		911CFEB72B7C18FE008A25A4 /* ModelPrototype */ = {
 			isa = PBXGroup;
 			children = (
+				911CFEE22B7C1EE8008A25A4 /* Model */,
 				911CFEB82B7C18FF008A25A4 /* ModelPrototypeApp.swift */,
 				911CFEBA2B7C18FF008A25A4 /* ContentView.swift */,
 				911CFEBC2B7C1902008A25A4 /* Assets.xcassets */,
@@ -125,6 +138,19 @@
 				911CFED52B7C1902008A25A4 /* ModelPrototypeUITestsLaunchTests.swift */,
 			);
 			path = ModelPrototypeUITests;
+			sourceTree = "<group>";
+		};
+		911CFEE22B7C1EE8008A25A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				911CFEE32B7C1F67008A25A4 /* MixedRadixNumber.swift */,
+				911CFEE52B7C2B54008A25A4 /* Attribute.swift */,
+				911CFEE72B7C2FD3008A25A4 /* AttributeGroup.swift */,
+				911CFEE92B7C303C008A25A4 /* AttributeGroupCollection.swift */,
+				911CFEEB2B7C3557008A25A4 /* CardDeck.swift */,
+				911CFEED2B7C3668008A25A4 /* AttributeGroupCollectionFactory.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +283,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				911CFEEA2B7C303C008A25A4 /* AttributeGroupCollection.swift in Sources */,
 				911CFEBB2B7C18FF008A25A4 /* ContentView.swift in Sources */,
+				911CFEE42B7C1F67008A25A4 /* MixedRadixNumber.swift in Sources */,
 				911CFEB92B7C18FF008A25A4 /* ModelPrototypeApp.swift in Sources */,
+				911CFEEC2B7C3557008A25A4 /* CardDeck.swift in Sources */,
+				911CFEEE2B7C3668008A25A4 /* AttributeGroupCollectionFactory.swift in Sources */,
+				911CFEE82B7C2FD3008A25A4 /* AttributeGroup.swift in Sources */,
+				911CFEE62B7C2B54008A25A4 /* Attribute.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

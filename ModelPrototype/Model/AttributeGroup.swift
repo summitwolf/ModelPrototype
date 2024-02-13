@@ -6,3 +6,20 @@
 //
 
 import Foundation
+
+struct AttributeGroup {
+    
+    let attributes: [any AttributeEnum]
+    
+    init(_ attributes: [any AttributeEnum]) {
+        self.attributes = attributes
+    }
+    
+    func getString() -> String {
+        var rtn = String()
+        for (index, element) in attributes.enumerated() {
+            rtn.append("Attribute Index: \(index): Kind:\(element.kind): Ordinal: \(element.ordinal): Value: \(element)\n")
+        }
+        return rtn
+    }
+}
