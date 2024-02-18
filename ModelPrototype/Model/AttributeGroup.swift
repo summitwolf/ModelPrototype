@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct AttributeGroup {
+class AttributeGroup {
     
     let attributes: [any AttributeEnum]
     
-    init(_ attributes: [any AttributeEnum]) {
+    required init(_ attributes: [any AttributeEnum]) {
         self.attributes = attributes
     }
     

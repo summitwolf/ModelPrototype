@@ -7,11 +7,11 @@
 
 import Foundation
 
-class AttributeGroupCollectionFactory: MixedRadixNumber {
+class AttributeGroupCollectionFactory<T:AttributeGroup>: MixedRadixNumber {
     
-    let attributes: [any AttributeValues]
+    let attributes: [any IndexedValues]
     
-    init(_ attributes: [any AttributeValues]) {
+    init(_ attributes: [any IndexedValues]) {
         self.attributes = attributes
         var bases = [Int]()
         for attribute in attributes {
@@ -20,9 +20,12 @@ class AttributeGroupCollectionFactory: MixedRadixNumber {
         super.init(bases)!
     }
     
-    func makeCompleteGroupColection() -> AttributeGroupCollection {
-        let groups = makePossableMRNs()
-        return AttributeGroupCollection(attributes,groups)
+    func makeCompleteIndexGroups() -> [[Int]]{
+        makePossableMRNs()
+    }
+    
+    func makeCompleteGroupColection() -> AttributeGroupCollection<T> {
+        AttributeGroupCollection<T>(attributes,makeCompleteIndexGroups())
     }
 
 }

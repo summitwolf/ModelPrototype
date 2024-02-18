@@ -18,8 +18,9 @@
 		911CFEE62B7C2B54008A25A4 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911CFEE52B7C2B54008A25A4 /* Attribute.swift */; };
 		911CFEE82B7C2FD3008A25A4 /* AttributeGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911CFEE72B7C2FD3008A25A4 /* AttributeGroup.swift */; };
 		911CFEEA2B7C303C008A25A4 /* AttributeGroupCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911CFEE92B7C303C008A25A4 /* AttributeGroupCollection.swift */; };
-		911CFEEC2B7C3557008A25A4 /* CardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911CFEEB2B7C3557008A25A4 /* CardDeck.swift */; };
 		911CFEEE2B7C3668008A25A4 /* AttributeGroupCollectionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911CFEED2B7C3668008A25A4 /* AttributeGroupCollectionFactory.swift */; };
+		916CD5792B829FEB00E33AE2 /* PlayingCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916CD5782B829FEB00E33AE2 /* PlayingCardModel.swift */; };
+		916CD57B2B82A07D00E33AE2 /* PlayingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916CD57A2B82A07D00E33AE2 /* PlayingCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +55,9 @@
 		911CFEE52B7C2B54008A25A4 /* Attribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attribute.swift; sourceTree = "<group>"; };
 		911CFEE72B7C2FD3008A25A4 /* AttributeGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeGroup.swift; sourceTree = "<group>"; };
 		911CFEE92B7C303C008A25A4 /* AttributeGroupCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeGroupCollection.swift; sourceTree = "<group>"; };
-		911CFEEB2B7C3557008A25A4 /* CardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDeck.swift; sourceTree = "<group>"; };
 		911CFEED2B7C3668008A25A4 /* AttributeGroupCollectionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeGroupCollectionFactory.swift; sourceTree = "<group>"; };
+		916CD5782B829FEB00E33AE2 /* PlayingCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardModel.swift; sourceTree = "<group>"; };
+		916CD57A2B82A07D00E33AE2 /* PlayingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		911CFEB72B7C18FE008A25A4 /* ModelPrototype */ = {
 			isa = PBXGroup;
 			children = (
+				916CD5752B829AF600E33AE2 /* Views */,
 				911CFEE22B7C1EE8008A25A4 /* Model */,
 				911CFEB82B7C18FF008A25A4 /* ModelPrototypeApp.swift */,
 				911CFEBA2B7C18FF008A25A4 /* ContentView.swift */,
@@ -147,10 +150,18 @@
 				911CFEE52B7C2B54008A25A4 /* Attribute.swift */,
 				911CFEE72B7C2FD3008A25A4 /* AttributeGroup.swift */,
 				911CFEE92B7C303C008A25A4 /* AttributeGroupCollection.swift */,
-				911CFEEB2B7C3557008A25A4 /* CardDeck.swift */,
 				911CFEED2B7C3668008A25A4 /* AttributeGroupCollectionFactory.swift */,
+				916CD5782B829FEB00E33AE2 /* PlayingCardModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		916CD5752B829AF600E33AE2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				916CD57A2B82A07D00E33AE2 /* PlayingCardView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,11 +294,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				916CD5792B829FEB00E33AE2 /* PlayingCardModel.swift in Sources */,
+				916CD57B2B82A07D00E33AE2 /* PlayingCardView.swift in Sources */,
 				911CFEEA2B7C303C008A25A4 /* AttributeGroupCollection.swift in Sources */,
 				911CFEBB2B7C18FF008A25A4 /* ContentView.swift in Sources */,
 				911CFEE42B7C1F67008A25A4 /* MixedRadixNumber.swift in Sources */,
 				911CFEB92B7C18FF008A25A4 /* ModelPrototypeApp.swift in Sources */,
-				911CFEEC2B7C3557008A25A4 /* CardDeck.swift in Sources */,
 				911CFEEE2B7C3668008A25A4 /* AttributeGroupCollectionFactory.swift in Sources */,
 				911CFEE82B7C2FD3008A25A4 /* AttributeGroup.swift in Sources */,
 				911CFEE62B7C2B54008A25A4 /* Attribute.swift in Sources */,

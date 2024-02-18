@@ -7,17 +7,17 @@
 
 import Foundation
 
-struct AttributeGroupCollection  {
+class AttributeGroupCollection<T:AttributeGroup> {
     
-    var attributeGroups = [AttributeGroup]()
+    var attributeGroups = [T]()
     
-    init(_ attributeEnums: [any AttributeValues], _ groups:[[Int]]) {
+    init(_ attributeEnums: [any IndexedValues], _ groups:[[Int]]) {
         for group in groups {
             var attributeGroups = [any AttributeEnum]()
             for (index,attribute) in attributeEnums.enumerated() {
                 attributeGroups.append(attribute.getValue(group[index])!)
             }
-            self.attributeGroups.append(AttributeGroup(attributeGroups))
+            self.attributeGroups.append(T(attributeGroups))
         }
     }
     
