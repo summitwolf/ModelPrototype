@@ -8,14 +8,14 @@
 import SwiftUI
 struct PlayingCardView: View {
     
-    var card:PlayingCardModel // = PlayingCardModel([PlayingCardRank.Ace,PlayingCardSuit.Hearts])
+    var card:PlayingCardModel
     let bounds = CGRect(x: 0, y: 0, width: 25, height: 40)
     let fontScale: CGFloat = 0.8
     let cornerRadius: CGFloat = 5
    
     var body: some View {
         return Button(action: {
-            print("click")
+            card.isFaceUp = !card.isFaceUp
         }, label: {
             Image(uiImage: makeFeatureGroupImage())
         })

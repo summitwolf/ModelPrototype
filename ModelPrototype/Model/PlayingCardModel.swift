@@ -166,7 +166,7 @@ class PlayingCardDeckModel: AttributeGroupCollection<PlayingCardModel> {
 
 }
 
-class PlayingCardModel: AttributeGroup, CustomStringConvertible, Identifiable {
+@Observable class PlayingCardModel: AttributeGroup, CustomStringConvertible, Identifiable {
     var description: String {
         "\(rank.name) \(suit.emoji)"
     }
