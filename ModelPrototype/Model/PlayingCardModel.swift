@@ -166,14 +166,11 @@ class PlayingCardDeckModel: AttributeGroupCollection<PlayingCardModel> {
 
 }
 
-class PlayingCardModel: AttributeGroup, CustomStringConvertible {
+class PlayingCardModel: AttributeGroup, CustomStringConvertible, Identifiable {
     var description: String {
         "\(rank.name) \(suit.emoji)"
     }
-    
     var isFaceUp = true
-    
-    
     var rank: PlayingCardRank {
         attributes[0] as! PlayingCardRank
     }

@@ -25,8 +25,8 @@ class MixedRadixNumber: CustomStringConvertible {
             return nil
         }
         var baseProducts = [Int]()
-        var numberOfBases = radixes.count
-        var highBaseIndex = numberOfBases-1
+        let numberOfBases = radixes.count
+        let highBaseIndex = numberOfBases-1
         var largestMRN = [Int]()
         for index in 0...highBaseIndex {
             largestMRN.append(radixes[index]-1)
@@ -118,7 +118,7 @@ class MixedRadixNumber: CustomStringConvertible {
         var remainder = ordinal
         if numberOfRadixes > 1 {
             for index in 1...radixHighIndex {
-                var qr = remainder.quotientAndRemainder(dividingBy: radixesProduct[index])
+                let qr = remainder.quotientAndRemainder(dividingBy: radixesProduct[index])
                 remainder = qr.remainder
                 rtn.append(qr.quotient)
             }
